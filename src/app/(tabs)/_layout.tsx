@@ -1,6 +1,6 @@
 import TabIcon from '@/components/tab-icon';
-import { Tabs, Redirect } from 'expo-router';
-import { home, bookmark, plus, profile } from '@/constants/icons';
+import { Tabs } from 'expo-router';
+import { Home, Bookmark, Plus, Profile } from '@/constants/icons';
 
 export default function TabsLayout() {
   return (
@@ -23,7 +23,7 @@ export default function TabsLayout() {
           headerShown: false,
           tabBarIcon: ({ color, focused }) => (
             <TabIcon
-              icon={home}
+              icon={Home}
               name='Home'
               color={color}
               focused={focused}
@@ -38,7 +38,7 @@ export default function TabsLayout() {
           headerShown: false,
           tabBarIcon: ({ color, focused }) => (
             <TabIcon
-              icon={bookmark}
+              icon={Bookmark}
               name='Bookmark'
               color={color}
               focused={focused}
@@ -53,7 +53,7 @@ export default function TabsLayout() {
           headerShown: false,
           tabBarIcon: ({ color, focused }) => (
             <TabIcon
-              icon={plus}
+              icon={Plus}
               name='Create'
               color={color}
               focused={focused}
@@ -68,7 +68,7 @@ export default function TabsLayout() {
           headerShown: false,
           tabBarIcon: ({ color, focused }) => (
             <TabIcon
-              icon={profile}
+              icon={Profile}
               name='Profile'
               color={color}
               focused={focused}
